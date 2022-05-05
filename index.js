@@ -105,6 +105,12 @@ async function run() {
     }
 }
 
+
+app.get('/hero', (req, res) => {
+    res.send('Hero meets hero ku');
+})
+
+
 run().catch(console.dir);
 
 app.get('/', (req, res) => {
